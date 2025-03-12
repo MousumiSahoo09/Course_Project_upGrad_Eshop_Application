@@ -1,0 +1,141 @@
+.navbar {
+  background-color: #3f51b5 !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 24px !important;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.shopping-cart {
+  font-size: 24px;
+}
+
+.search-box {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+  margin-left: 24px;
+  width: 100%;
+  max-width: 600px;
+  transition: background-color 0.3s;
+}
+
+.search-box:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.search-icon {
+  padding: 0 16px;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.search-input {
+  color: inherit;
+  padding: 8px 8px 8px 56px;
+  width: 100%;
+}
+
+.search-input input {
+  color: white;
+}
+
+.search-input input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  opacity: 1;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav-button {
+  text-transform: none !important;
+  font-weight: normal !important;
+  font-size: 1rem !important;
+}
+
+.add-product-button {
+  color: white !important;
+  position: relative;
+}
+
+.add-product-button::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s;
+}
+
+.add-product-button:hover::after {
+  width: 80%;
+}
+
+.logout-button {
+  background-color: #f50057 !important;
+  color: white !important;
+  padding: 6px 16px !important;
+  font-weight: 500 !important;
+}
+
+.logout-button:hover {
+  background-color: #c51162 !important;
+}
+
+@media (max-width: 960px) {
+  .search-box {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .toolbar {
+    flex-direction: column;
+    padding: 12px !important;
+    gap: 12px;
+  }
+
+  .left-section {
+    width: 100%;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .search-box {
+    margin-left: 0;
+    max-width: none;
+  }
+
+  .nav-buttons {
+    width: 100%;
+    justify-content: center;
+  }
+} 

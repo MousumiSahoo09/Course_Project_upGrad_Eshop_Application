@@ -1,0 +1,169 @@
+.product-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.product-image {
+  height: 200px;
+  object-fit: contain;
+  padding: 16px;
+  background-color: white;
+}
+
+.product-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 16px !important;
+}
+
+.product-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.product-name {
+  font-size: 1.1rem !important;
+  font-weight: 500 !important;
+  color: rgba(0, 0, 0, 0.87);
+  margin-right: 16px;
+}
+
+.product-price {
+  font-size: 1.1rem !important;
+  font-weight: 500 !important;
+  color: rgba(0, 0, 0, 0.87);
+  white-space: nowrap;
+}
+
+.product-description {
+  margin-bottom: 16px !important;
+  color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.product-actions {
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.admin-actions {
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.edit-button, .delete-button {
+  color: #757575 !important;
+  padding: 8px !important;
+}
+
+.edit-button:hover {
+  color: #1976d2 !important;
+  background-color: rgba(25, 118, 210, 0.04) !important;
+}
+
+.delete-button:hover {
+  color: #d32f2f !important;
+  background-color: rgba(211, 47, 47, 0.04) !important;
+}
+
+.buy-button {
+  background-color: #3f51b5 !important;
+  color: white !important;
+  padding: 6px 24px !important;
+}
+
+.buy-button:hover {
+  background-color: #303f9f !important;
+}
+
+.delete-dialog .MuiDialog-paper {
+  min-width: 400px;
+  border-radius: 4px;
+}
+
+.delete-dialog .MuiDialogTitle-root {
+  padding: 16px 24px;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.25rem;
+}
+
+.delete-dialog .MuiDialogContent-root {
+  padding: 8px 24px 24px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.dialog-actions {
+  padding: 16px 24px !important;
+  justify-content: flex-end !important;
+  gap: 8px;
+}
+
+.ok-button {
+  background-color: #3f51b5 !important;
+  color: white !important;
+  text-transform: uppercase !important;
+  padding: 6px 16px !important;
+}
+
+.cancel-button {
+  color: #3f51b5 !important;
+  text-transform: uppercase !important;
+}
+
+.success-notification {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  z-index: 1400;
+  min-width: 300px;
+  animation: slideIn 0.3s ease-out;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.success-message {
+  flex-grow: 1;
+  font-size: 1rem;
+}
+
+.close-button {
+  color: white !important;
+  padding: 4px !important;
+}
+
+.close-button:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+} 

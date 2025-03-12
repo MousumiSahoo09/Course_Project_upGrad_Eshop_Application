@@ -1,0 +1,91 @@
+.sign-in-container {
+  min-height: calc(100vh - 64px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 64px;
+  padding-bottom: 24px;
+}
+
+.sign-in-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 24px;
+}
+
+.lock-icon-container {
+  margin-bottom: 16px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f50057;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lock-icon {
+  color: white;
+  font-size: 20px !important;
+}
+
+.sign-in-title {
+  margin-bottom: 24px !important;
+  font-weight: 500 !important;
+}
+
+.sign-in-form {
+  width: 100%;
+}
+
+.text-field {
+  background-color: #f8f9fa !important;
+}
+
+.text-field input {
+  padding: 15px 14px !important;
+}
+
+.error-message {
+  margin: 8px 0 !important;
+  text-align: center;
+}
+
+.sign-in-button {
+  margin: 24px 0 16px !important;
+  padding: 12px !important;
+  background-color: #3f51b5 !important;
+  font-weight: 500 !important;
+}
+
+.sign-up-link {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.sign-up-link a {
+  color: #3f51b5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.sign-up-link a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  margin-top: auto;
+  padding: 24px;
+  width: 100%;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+} 

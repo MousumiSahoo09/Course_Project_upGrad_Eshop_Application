@@ -1,0 +1,99 @@
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  min-height: calc(100vh - 64px);
+}
+
+.signup-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lock-icon-wrapper {
+  width: 40px;
+  height: 40px;
+  background-color: #f50057;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.lock-icon {
+  color: white;
+  font-size: 20px !important;
+}
+
+.signup-title {
+  color: rgba(0, 0, 0, 0.87);
+  margin-bottom: 24px !important;
+  font-weight: 400 !important;
+}
+
+.signup-form {
+  width: 100%;
+}
+
+.form-field {
+  margin-bottom: 16px !important;
+}
+
+.field-label {
+  color: rgba(0, 0, 0, 0.54) !important;
+  font-size: 0.875rem !important;
+}
+
+/* Style for the input fields */
+.form-field .MuiOutlinedInput-root {
+  background-color: white;
+}
+
+.form-field .MuiOutlinedInput-input {
+  padding: 14px !important;
+}
+
+.form-field .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(0, 0, 0, 0.23);
+}
+
+/* Style for the signup button */
+.signup-button {
+  margin-top: 16px !important;
+  margin-bottom: 16px !important;
+  padding: 12px !important;
+  background-color: #3f51b5 !important;
+  text-transform: uppercase !important;
+  font-weight: 500 !important;
+}
+
+.signup-button:hover {
+  background-color: #303f9f !important;
+}
+
+/* Style for the "Already have an account?" section */
+.signin-link {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.link {
+  color: #3f51b5 !important;
+  text-decoration: none !important;
+  font-weight: 500 !important;
+}
+
+.link:hover {
+  text-decoration: underline !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .signup-container {
+    padding-top: 24px;
+  }
+} 

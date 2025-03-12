@@ -1,0 +1,23 @@
+.sort-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.sort-label {
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 500;
+}
+
+.sort-form-control {
+  min-width: 200px;
+}
+
+.sort-select {
+  background-color: white;
+}
+
+.sort-select .MuiSelect-select {
+  padding: 12px 14px;
+} 

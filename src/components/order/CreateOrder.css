@@ -1,0 +1,292 @@
+.create-order-container {
+  padding: 32px;
+  min-height: calc(100vh - 64px);
+  background-color: #f5f5f5;
+}
+
+.order-stepper {
+  background-color: white !important;
+  padding: 24px !important;
+  border-radius: 4px;
+  margin-bottom: 24px;
+}
+
+.order-details-card {
+  background-color: white;
+  margin-bottom: 24px;
+}
+
+.product-summary {
+  display: flex;
+  gap: 24px;
+}
+
+.product-image {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.product-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.product-category {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.product-category span {
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 500;
+}
+
+.product-description {
+  color: rgba(0, 0, 0, 0.87);
+  margin: 8px 0;
+}
+
+.quantity-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.quantity {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.price {
+  color: #ff0000;
+}
+
+.step-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.back-button {
+  color: rgba(0, 0, 0, 0.87) !important;
+}
+
+.next-button {
+  background-color: #3f51b5 !important;
+  color: white !important;
+}
+
+.next-button:hover {
+  background-color: #303f9f !important;
+}
+
+@media (max-width: 600px) {
+  .product-summary {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-image {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .quantity-price {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+.address-step {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.section-title {
+  color: rgba(0, 0, 0, 0.87);
+  margin-bottom: 24px !important;
+}
+
+.address-form-container {
+  background-color: white;
+  border-radius: 4px;
+  padding: 24px;
+}
+
+.address-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-field .MuiOutlinedInput-root {
+  background-color: white;
+}
+
+.form-field .MuiOutlinedInput-input {
+  padding: 14px;
+}
+
+.form-field .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(0, 0, 0, 0.23);
+}
+
+.save-address-button {
+  background-color: #3f51b5 !important;
+  color: white !important;
+  padding: 12px !important;
+  margin-top: 8px !important;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.back-button {
+  color: #3f51b5 !important;
+}
+
+.next-button {
+  background-color: #3f51b5 !important;
+  color: white !important;
+}
+
+.error-snackbar {
+  background-color: #e57373 !important;
+}
+
+.error-snackbar .MuiSnackbarContent-root {
+  background-color: #e57373;
+  color: white;
+}
+
+.error-snackbar .MuiIconButton-root {
+  color: white;
+}
+
+/* Update input field styles to match the design */
+.MuiOutlinedInput-root {
+  border-radius: 4px !important;
+}
+
+.MuiOutlinedInput-input {
+  padding: 14px !important;
+}
+
+.MuiInputLabel-outlined {
+  transform: translate(14px, 16px) scale(1) !important;
+}
+
+.MuiInputLabel-outlined.MuiInputLabel-shrink {
+  transform: translate(14px, -6px) scale(0.75) !important;
+}
+
+/* Snackbar positioning */
+.MuiSnackbar-root {
+  top: 24px !important;
+  right: 24px !important;
+  left: auto !important;
+  bottom: auto !important;
+}
+
+.confirm-order-step {
+  background-color: white;
+  padding: 32px;
+  border-radius: 4px;
+  margin-top: 24px;
+}
+
+.order-summary, .address-details {
+  background-color: white;
+  padding: 24px;
+  height: 100%;
+}
+
+.section-title {
+  color: rgba(0, 0, 0, 0.87);
+  margin-bottom: 24px !important;
+  font-size: 28px !important;
+}
+
+.order-details, .address-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.order-details span {
+  font-weight: 500;
+}
+
+.description {
+  color: rgba(0, 0, 0, 0.6);
+  font-style: italic;
+}
+
+.total-price {
+  color: #ff0000 !important;
+  margin-top: 16px !important;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.back-button {
+  color: #3f51b5 !important;
+}
+
+.place-order-button {
+  background-color: #3f51b5 !important;
+  color: white !important;
+  padding: 6px 24px !important;
+}
+
+.completed-step {
+  color: #4caf50;
+  margin-right: 8px;
+}
+
+.success-snackbar {
+  background-color: #4caf50 !important;
+}
+
+.success-snackbar .MuiSnackbarContent-root {
+  background-color: #4caf50;
+}
+
+/* Update stepper styles */
+.order-stepper .MuiStepIcon-completed {
+  color: #4caf50 !important;
+}
+
+.order-stepper .MuiStepIcon-active {
+  color: #3f51b5 !important;
+}
+
+@media (max-width: 600px) {
+  .confirm-order-step {
+    padding: 16px;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  .action-buttons button {
+    width: 100%;
+  }
+} 
